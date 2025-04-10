@@ -184,6 +184,8 @@ proxy-groups:
     type: select
 
 rules:
+  - "PROCESS-NAME,subs-check.exe,DIRECT"
+  - "PROCESS-NAME,subs-check,DIRECT"
   - "RULE-SET,private,DIRECT"
   - "RULE-SET,bing,AIGC"
   - "RULE-SET,copilot,AIGC"
