@@ -476,14 +476,13 @@ rule-providers:
     format: text
     type: http
   21NG:
-    - DOMAIN-SUFFIX,pttime.org
-    - DOMAIN-SUFFIX,carpt.net
-    - DOMAIN-SUFFIX,qingwapt.com
-    - DOMAIN-SUFFIX,2109116.xyz
-    - DOMAIN-SUFFIX,zing.sd
-    - DOMAIN-SUFFIX,ghfast.top
-
-
+    url: https://v2.zing.sd/c2569e9c1671404b85127a34d2a641da/zing.list
+    path: ./ruleset/zing.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+    
 rules:
   - "PROCESS-NAME,subs-check.exe,🎯 全球直连"
   - "PROCESS-NAME,subs-check,🎯 全球直连"
