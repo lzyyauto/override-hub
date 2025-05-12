@@ -475,6 +475,14 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  21NG:
+    - DOMAIN-SUFFIX,pttime.org
+    - DOMAIN-SUFFIX,carpt.net
+    - DOMAIN-SUFFIX,qingwapt.com
+    - DOMAIN-SUFFIX,2109116.xyz
+    - DOMAIN-SUFFIX,zing.sd
+    - DOMAIN-SUFFIX,ghfast.top
+
 
 rules:
   - "PROCESS-NAME,subs-check.exe,🎯 全球直连"
@@ -509,5 +517,6 @@ rules:
   - "RULE-SET,ChinaDomain,🎯 全球直连"
   - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
   - "RULE-SET,Download,🎯 全球直连"
+  - "RULE-SET,21NG,🎯 全球直连"
   - "GEOIP,CN,🎯 全球直连"
   - "MATCH,🐟 漏网之鱼"
